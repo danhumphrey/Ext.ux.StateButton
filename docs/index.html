@@ -54,7 +54,7 @@
     </script>
     <script type="text/javascript" src="state-button.js"></script>
     <script type="text/javascript">
-
+      var to;
       var stateChangeHandler = function (btn, state) {
 
         var mb = Ext.MessageBox.show({
@@ -62,12 +62,15 @@
           msg: "The button with id <b>" + btn.id + "</b> fired the handler for state <b>" + state + "</b>",
           icon: Ext.Msg.INFO,
           buttons: Ext.MessageBox.OK,
-          closable: false
+          closable: false,
+          fn: function() {
+            clearTimeout(to);
+          }
         });
 
         console.log(mb);
 
-        setTimeout(function () {
+        to = setTimeout(function () {
           mb.hide();
         }, 4000);
 
