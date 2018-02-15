@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/obsidian.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/resources/css/ext-all.css" media="screen" rel="Stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/resources/css/ext-all.css" media="screen"
+          rel="Stylesheet" type="text/css"/>
     <style type="text/css">
 
         body {
@@ -16,7 +17,7 @@
             line-height: 1.5;
         }
 
-        h1{
+        h1 {
             font-size: 2em;
             border-bottom: 1px solid #eaecef;
             margin: 0.67em 0;
@@ -26,10 +27,6 @@
             margin-top: 0.2em;
         }
 
-        a.source {
-            font-size: 0.5em;
-            color: cornflowerblue !important;
-        }
         em {
             font-style: italic;
         }
@@ -48,10 +45,8 @@
 
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/adapter/ext/ext-base-debug.js" type="text/javascript">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/ext-all-debug.js" type="text/javascript">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/adapter/ext/ext-base-debug.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/extjs/3.4.1-1/ext-all-debug.js" type="text/javascript"></script>
     <script type="text/javascript" src="state-button.js"></script>
     <script type="text/javascript">
       var to;
@@ -63,7 +58,7 @@
           icon: Ext.Msg.INFO,
           buttons: Ext.MessageBox.OK,
           closable: false,
-          fn: function() {
+          fn: function () {
             clearTimeout(to);
           }
         });
@@ -124,7 +119,7 @@
         tbMain.add('-', {
           text: 'Just a Button',
           tooltip: 'Clicking me does nothing.'
-        },{
+        }, {
           text: 'Another Button',
           tooltip: 'Clicking me also does nothing.'
         }, '-');
@@ -159,13 +154,15 @@
 
 </head>
 <body>
-<h1>Ext.ux.StateButton <a class="source" href="https://github.com/danhumphrey/Ext.ux.StateButton">Source</a></h1>
-<p>StateButton is a Button which has various <em>states</em>. When the Button is clicked, it cycles to the next <em>state</em>.
-    The <em>state</em> can also be set programmatically.</p>
-<p>Each <em>state</em> can be configured with a different icon, text, overflow text, event handler etc.</p>
-<hr>
-<p>The following code was used to create the toolbar instance:</p>
-<pre>
+
+    <a href="https://github.com/danhumphrey/Ext.ux.StateButton"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <h1>Ext.ux.StateButton</h1>
+    <p>StateButton is a Button which has various <em>states</em>. When the Button is clicked, it cycles to the next <em>state</em>.
+        The <em>state</em> can also be set programmatically.</p>
+    <p>Each <em>state</em> can be configured with a different icon, text, overflow text, event handler etc.</p>
+    <hr>
+    <p>The following code was used to create the toolbar instance:</p>
+    <pre>
     <code class="javascript">
         new Ext.ux.StateButton({
           id: 'toolbar-state-button',
@@ -192,8 +189,8 @@
     </code>
 </pre>
 
-<p>The following code was used to create the form instance:</p>
-<pre>
+    <p>The following code was used to create the form instance:</p>
+    <pre>
     <code class="javascript">
         new Ext.ux.StateButton({
           id: 'form-state-button',
