@@ -22,6 +22,11 @@
             margin: 0.67em 0;
         }
 
+        h2 {
+            font-size: 1.5em;
+            margin: 0.37em 0;
+        }
+
         h1:first-of-type {
             margin-top: 0.2em;
         }
@@ -153,7 +158,7 @@
           console.log("The button with id '" + btn.id + "' fired the handler for state '" + state + "'");
         };
 
-        new Ext.ux.StateButton({
+        new Ext.ux.StateButton( {
           id: 'toolbar-state-button',
           states: [ {
             itemId: 'state1',
@@ -174,7 +179,7 @@
             handler: stateChange,
             overflowText: 'State 3 Overflowing'
           } ]
-        })
+        } )
     </code>
 </pre>
 
@@ -185,7 +190,7 @@
           console.log("The button with id '" + btn.id + "' fired the handler for state '" + state + "'");
         };
 
-        new Ext.ux.StateButton({
+        new Ext.ux.StateButton( {
           id: 'form-state-button',
           states: [ {
             itemId: 'state1',
@@ -200,7 +205,7 @@
             tooltip: 'State 2',
             handler: stateChange
           } ]
-        })
+        } )
     </code>
 </pre>
 <div id="panel">
